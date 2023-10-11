@@ -1,30 +1,24 @@
 {
   "name": "nextjs-playground",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "dev": "node server2.js",
-    "build": "next build",
-    "start": "NODE_ENV=production node server1.js"
-  },
+  "private": true,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lianghua1987/nextjs-playground.git"
   },
-  "author": "",
+  "author": "Hua Liang",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/lianghua1987/nextjs-playground/issues"
-  },
-  "homepage": "https://github.com/lianghua1987/nextjs-playground#readme",
-  "devDependencies": {
-    "next": "^13.4.19",
+  "dependencies": {
+    "next": "^13.5.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
-  "dependencies": {
-    "axios": "^1.5.0",
-    "express": "^4.18.2"
+  "scripts": {
+    "dev": "next dev"
+  },
+  "devDependencies": {
+    "@types/node": "20.8.4",
+    "@types/react": "18.2.28",
+    "typescript": "5.2.2"
   }
 }
