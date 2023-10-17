@@ -13,7 +13,7 @@ export default function RootLayout({children}: { children: ReactNode }) {
         <main className="grow py-3">
             {children}
         </main>
-        <footer className="border-t py-2 text-center text-xs min font-exo2">
+        <footer className="border-t py-3 text-center text-xs text-slate-500 font-exo2">
             Game data and images courtesy of{' '}
             <a href="https://rawg.io/"
                className="text-orange-800 hover:underline"
