@@ -2,7 +2,6 @@ import Heading from "@/components/Heading";
 import Link from "next/link";
 
 export default function HomePage() {
-    console.log('[HOMEOage] rendering');
     return (
         <>
             <Heading>Indie Gamer</Heading>

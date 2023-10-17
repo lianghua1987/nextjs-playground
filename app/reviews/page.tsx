@@ -1,26 +1,26 @@
 import Link from "next/link";
 import Heading from "@/components/Heading";
+import {getReviews} from "@/lib/reviews";
 
-export default function ReviewsPage() {
+export default async function ReviewsPage() {
+    const reviews = await getReviews();
     return (
         <>
             <Heading>Reviews</Heading>
-            <ul className="flex flex-col gap-4">
-                <li className="border w-80 bg-white rounded shadow hover:shadow-2xl">
-                    <Link href="/reviews/hollow-knight">
-                        <img src="/images/hollow-knight.jpg" alt="" width="320" height="180"
-                             className="mb-2 rounded-t"/>
-                        <h2 className="text-center py-1 font-semibold font-orbitron">Hollow Knight</h2>
-                    </Link>
-                </li>
-                <li className="border w-80 bg-white rounded shadow hover:shadow-2xl">
-                    <Link href="/reviews/stardew-valley">
-                        <img src="/images/stardew-valley.jpg" alt="" width="320" height="180"
-                             className="mb-2 rounded-t"/>
-                        <h2 className="text-center py-1 font-semibold font-orbitron">Stardew Valley</h2>
-                    </Link>
-                </li>
+            <ul className="flex flex-row gap-4 flex-wrap">
+                {
+                    reviews.map(review => (
+                        <li className="border w-80 bg-white rounded shadow hover:shadow-2xl" key={review.title}>
+                            <Link href={`/reviews/${review.title}`}>
+                                <img src={review.imageUrl} alt="" width="320" height="180"
+                                     className="mb-2 rounded-t"/>
+                                <h2 className="text-center py-1 font-semibold font-orbitron">{review.title}</h2>
+                            </Link>
+                        </li>))
+                }
             </ul>
+
+
         </>
     )
 }
