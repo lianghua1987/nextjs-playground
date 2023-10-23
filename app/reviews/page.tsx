@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Heading from "@/components/Heading";
-import {getReview, getReviews} from "@/lib/reviews";
+import {getReviews} from "@/lib/reviews";
 
 export const metadata = {
     title: 'Reviews'
@@ -23,8 +23,6 @@ export default async function ReviewsPage() {
                         </li>))
                 }
             </ul>
-
-
         </>
     )
 }

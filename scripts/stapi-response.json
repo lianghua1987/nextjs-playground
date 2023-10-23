@@ -1,0 +1,114 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "attributes": {
+        "slug": "hollow-knight",
+        "title": "Hollow Knight",
+        "subtitle": "A Sublime Journey Through an Enigmatic World",
+        "publishedAt": "2023-05-16T11:00:00.000Z",
+        "image": {
+          "data": {
+            "id": 1,
+            "attributes": {
+              "url": "/uploads/hollow_knight_da5257a59c.jpg"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": 2,
+      "attributes": {
+        "slug": "stardew-valley",
+        "title": "Stardew Valley",
+        "subtitle": "A Tranquil Oasis of Farming and Adventure",
+        "publishedAt": "2023-05-09T11:00:00.000Z",
+        "image": {
+          "data": {
+            "id": 2,
+            "attributes": {
+              "url": "/uploads/stardew_valley_a268200e49.jpg"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": 3,
+      "attributes": {
+        "slug": "hellblade-senuas-sacrifice",
+        "title": "Hellblade: Senua's Sacrifice",
+        "subtitle": "A Hauntingly Captivating Journey",
+        "publishedAt": "2023-05-18T11:00:00.000Z",
+        "image": {
+          "data": {
+            "id": 3,
+            "attributes": {
+              "url": "/uploads/hellblade_senuas_sacrifice_56b4c7ac75.jpg"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": 4,
+      "attributes": {
+        "slug": "dont-starve-together",
+        "title": "Don't Starve Together",
+        "subtitle": "Survive Together or Perish Alone",
+        "publishedAt": "2023-05-11T11:00:00.000Z",
+        "image": {
+          "data": {
+            "id": 4,
+            "attributes": {
+              "url": "/uploads/dont_starve_together_11e6d2baed.jpg"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": 5,
+      "attributes": {
+        "slug": "fall-guys",
+        "title": "Fall Guys: Ultimate Knockout",
+        "subtitle": "A Whimsical Party Game for Endless Fun",
+        "publishedAt": "2023-05-27T11:00:00.000Z",
+        "image": {
+          "data": {
+            "id": 5,
+            "attributes": {
+              "url": "/uploads/fall_guys_9f9b386677.jpg"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": 6,
+      "attributes": {
+        "slug": "inside",
+        "title": "INSIDE",
+        "subtitle": "Dive Into the Enigmatic Abyss",
+        "publishedAt": "2023-05-12T11:00:00.000Z",
+        "image": {
+          "data": {
+            "id": 6,
+            "attributes": {
+              "url": "/uploads/inside_edd39ca199.jpg"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "meta": {
+    "pagination": {
+      "page": 1,
+      "pageSize": 6,
+      "pageCount": 5,
+      "total": 25
+    }
+  }
+}
