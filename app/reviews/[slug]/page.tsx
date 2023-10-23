@@ -2,6 +2,7 @@ import Heading from "@/components/Heading";
 import {getReview, getSlugs} from "@/lib/reviews";
 import SharedButtons from "@/components/ShareButtons";
 import {Metadata} from "next";
+import Image from "next/image";
 
 interface ReviewPageParams {
     slug: string;
@@ -33,7 +34,7 @@ export default async function ReviewPage({params: {slug}}) {
                 <SharedButtons/>
             </div>
 
-            <img src={review.imageUrl} alt="" width="640" height="360" className="mb-2 rounded"/>
+            <Image src={review.imageUrl} alt="" width="640" height="360" className="mb-2 rounded"/>
             <article dangerouslySetInnerHTML={{__html: review.html}}
                      className="prose prose-slate max-w-screen-sm"/>
         </>

@@ -6,7 +6,7 @@ import * as qs from 'qs';
 const BACKEND_URL = 'http://127.0.0.1:1337';
 
 export async function getFeaturedReview() {
-    const reviews = await getReviews();
+    const reviews = await getReviews(3);
     return reviews[0];
 }
 
@@ -42,11 +42,11 @@ export async function getReviewsOld() {
     return reviews;
 }
 
-export async function getReviews() {
+export async function getReviews(pageSize) {
     const {data} = await fetchReviews({
         fields: ['slug', 'title', 'subtitle', 'publishedAt'],
         populate: {image: {fields: ['url']}},
-        pagination: {pageSize: 6},
+        pagination: {pageSize},
         sort: ['publishedAt:desc']
     });
     const reviews = data.map(mapper);
